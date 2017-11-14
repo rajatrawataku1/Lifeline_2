@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>LifeLine</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/materialize.css">
+        <link rel="stylesheet" href="css/mate_icon.css">
+
+    </head>
+    <body>
+
+      <div id="modal1" class="modal pink accent-1">
+        <div class="modal-content">
+            <div class="row">
+              <div class="col s12 center">
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+      <ul id="slide-out" class="side-nav">
+
+        <li><div class="userView">
+          <div class="background">
+            <img src="images/office.jpg">
+          </div>
+          <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+          <a href="#!name"><span class="white-text name">John Doe</span></a>
+          <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+        </div></li>
+        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+        <li><a href="#!">Second Link</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+      </ul>
+
+      <div id="main_frame">
+
+        <div id="authentication_screen">
+          <div class="row"> <br> <br> <br> <br> <br> <br><br> <br> <br><br> <br> <br> <br> <br> <br><br> <br> <br><br> <br> <br>
+              <div class="col s6 center">
+                <a class="waves-effect waves-light btn">Login</a>
+              </div>
+              <div class="col s6 center">
+                <a class="waves-effect waves-light btn">SignUp</a>
+              </div>
+          </div>
+        </div>
+
+        <div id="login_screen">
+          <div class="row"> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            <div class="input-field col s8 offset-s2">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="doctor_id" type="text" class="validate">
+              <label for="doctor_id">Doctor name</label>
+            </div>
+            <div class="input-field col s8 offset-s2">
+            <i class="material-icons prefix">vpn_key</i>
+            <input id="password_doctor" type="text" class="validate">
+            <label for="password_doctor">Password</label>
+            </div>
+            <div class="col s12 center"><br> <br>
+              <a class="waves-effect waves-light btn" onclick="senior_doctor_login()">Login</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="main_screen_actual">
+          <nav class="nav-extended">
+             <div class="nav-wrapper red darken-2">
+                 <a href="#!" class="brand-logo center"><i class="large material-icons">healing</i>LifeLine </a>
+                 <ul class="left">
+                   <li><a href="#" data-activates="slide-out" class="button-collapse" ><i class="large material-icons">menu</i></a></li>
+                 </ul>
+                 <ul class="right">
+                   <li><a href="#"><i class="large material-icons">notifications</i></a></li>
+                   <li><a href="#"><i class="large material-icons">supervisor_account</i></a></li>
+                   </ul>
+
+               <ul class="tabs tabs-transparent">
+               <li class="tab center-text"><a class="active waves-effect waves-yellow" href="#test1"><i class="large material-icons">notifications</i></a></li>
+               <li class="tab center-text"><a class="active waves-effect waves-yellow" href="#test2"><i class="large material-icons">location_searching</i></a></li>
+               </ul>
+             </div>
+           </nav>
+
+           <div id="test1">
+
+             <div class="row my_notifications">
+
+               <div class="col s12 m6 card_containing_details">
+                 <div class="card blue-grey darken-1">
+                   <div class="card-content white-text">
+                     <span class="card-title doctor_name"></span>
+                     <div class="row having_content"> <br>
+                       <div class="col s2"> <i class="material-icons">subdirectory_arrow_right</i>
+                       </div>
+                       <div class="col s10 surgery_thing">
+                       </div>
+                     </div>
+                     <div class="row review_system">
+                       <div class="col s1"> <i class="material-icons">rate_review</i>
+                       </div> \
+                       <div class="col s5 offset-s1 review_numbers">
+                       </div>
+                       <div class="col s5 direction_click" style="padding-right: 0;">
+                       </div>
+                     </div>
+                     <div class="col s12 time_to_travel" style="padding-left: 0px;">
+                       <div class="col s6" style="padding-left: 0px;">
+                         <div class="col s6"><i class="material-icons">room</i>
+                         </div>
+                         <p class="distancei">
+                         </p>
+                       </div>
+                       <div class="col s6">
+                         <div class="col s6"><i class="material-icons">timer</i>
+                         </div> <p class="timeii"> </p>
+                       </div>
+                     </div> <br>
+                   </div>
+                   <div class="card-action">
+                     <div class="row" style="margin-bottom: 0px;">
+                       <div class="col s12 this_will_send_message">
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+
+             </div>
+
+           </div>
+           <div id="test2">
+
+
+           </div>
+
+        </div>
+
+      	<div id="main_screen_1">
+      			 <nav class="nav-extended">
+      			    <div class="nav-wrapper red darken-2">
+      				      <a href="#!" class="brand-logo center"><i class="large material-icons">healing</i>LifeLine </a>
+      				      <ul class="left">
+      				        <li><a href="#" data-activates="slide-out" class="button-collapse" ><i class="large material-icons">menu</i></a></li>
+      				      </ul>
+      				      <ul class="right">
+      				      	<li><a href="#"><i class="large material-icons">notifications</i></a></li>
+      				        <li><a href="#"><i class="large material-icons">supervisor_account</i></a></li>
+      		     	      </ul>
+
+      			    	<ul class="tabs tabs-transparent">
+      						<li class="tab center-text"><a class="active waves-effect waves-yellow" href="#test1">Ambulance Tracking</a></li>
+      				    </ul>
+      			    </div>
+      		    </nav>
+
+              <div id="map">
+
+              </div>
+          </div>
+
+      </div>
+
+
+      <script type="text/javascript" src="cordova.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
+      <script type='text/javascript' src="js/jquery.min.js"> </script>
+      <script type="text/javascript" src="ajax_connection_with_server.js"></script>
+      <script type="text/javascript" src="js/materialize.js"> </script>
+
+      <script>
+
+
+// setInterval(function(){
+//
+//     get_new_point_on_map();
+//
+//     console.log('hello');
+//
+// },5000)
+
+function initMap() {
+
+  var geocoder = new google.maps.Geocoder;
+  var infowindow = new google.maps.InfoWindow;
+
+
+  user_location={lat:  18.606875, lng: 73.875177};
+
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat:  18.606875, lng: 73.875177},
+    zoom: 15
+  });
+
+}
+
+
+
+</script>
+
+<!-- AIzaSyCiOnT1WNK6z5HUU6I2vqIEdswiOjkiRj4 -->
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzLlYZXgXOPfMrWJ5GdnVhd7t-HbJGQ0k&callback=initMap"
+async defer>
+</script>
+
+
+<script>
+$('.modal').modal({
+  dismissible: true, // Modal can be dismissed by clicking outside of the modal
+  opacity: .5, // Opacity of modal background
+  inDuration: 300, // Transition in duration
+  outDuration: 200, // Transition out duration
+  endingTop: '50%' // Ending top style attribute
+});
+
+$(".button-collapse").sideNav({
+  menuWidth: 250, // Default is 300
+  edge: 'left', // Choose the horizontal origin
+  closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+  draggable: true, // Choose whether you can drag to open on touch screens,
+
+});
+
+</script>
+
+
+    </body>
+</html>
+
+
+
+<!--  sdafs-->
