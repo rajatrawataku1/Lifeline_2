@@ -1,0 +1,68 @@
+
+::-webkit-scrollbar {
+        display: none;
+    }
+
+::-moz-scrollbar {
+        display: none;
+    }
+
+#main_frame{
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+}
+
+
+#main_screen_1{
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+#map{
+  position: absolute;
+  top: 15%;
+  left:0%;
+  height: 85%;
+  width: 100%;
+  background-color: white;
+}
+
+#main_screen_actual{
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+}
+
+#authentication_screen{
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+}
+
+#login_screen{
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
